@@ -1,0 +1,66 @@
+<!--<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="textml; charset=gb2312">
+    <title>无标题文档</title>
+    <style>
+        /*
+        创建不的布局环境，即创建不同的BFC
+        float的值不为none。
+        overflow的值不为visible。
+        display的值为table-cell, table-caption, inline-block中的任何一个。
+        position的值不为relative和static。*/
+
+        * { padding:0; margin:0; }
+        #red, #yellow, #orange, #green { width:100px; height:100px; float:left; }
+        #red { background-color:red; }
+        #yellow { background-color:yellow; }
+        #orange { background-color:orange; }
+        #green { background-color:green; }
+        #c1{
+            overflow: hidden;
+        }
+        #c2{
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+<div id="c1">
+    <div id="red">
+    </div>
+    <div id="yellow">
+    </div>
+</div>
+<div id="c2">
+    <div id="orange">
+    </div>
+    <div id="green">
+    </div>
+</div>
+<p>Here is the text!</p>
+</body>
+</html>
+-->
+<!DOCTYPE HTML>
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="textml; charset=gb2312">
+    <title>无标题文档</title>
+    <style>
+        html,body {height:100%; }
+        * { padding:0; margin:0; color:#fff; text-decoration:none; list-style:none; font-family:"微软雅黑" }
+        .aside{background:#f00;width:170px;float:left;height:300px;}
+        .main{background:#090;height:100%;}
+    </style>
+</head>
+
+<body>
+<div class="aside">
+</div>
+<div class="main">
+</div>
+</body>
+</html>
