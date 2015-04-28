@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<style type="text/css">
+        .main{float:left;}
+        .side{float:right;}
+    </style>
+    <div class="warp" id="float2">
+        <h2>2）使用 br标签和其自身的 html属性</h2>
+        <div class="main left">.main{float:left;}</div>
+        <div class="side left">.side{float:right;}</div>
+        <br clear="all" />
+    </div>
+    <div class="footer">.footer</div>-->
+   <!-- <style type="text/css">
+        .main{float:left;}
+        .side{float:right;}
+    </style>
+    <div class="warp" id="float1">
+        <h2>1）添加额外标签</h2>
+        <div class="main left">.main{float:left;}</div>
+        <div class="side left">.side{float:right;}</div>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="footer">.footer</div>-->
+    <style type="text/css">
+        .father{
+            margin: auto;
+            background-color: red;
+            padding: 10px;
+            width:auto;
+            height: 100px;;
+        }
+        .child1{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+        }
+        .child2{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            float: right;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="father">
+        <div class="child1">
+            <div>nihao</div>
+            <div>nihao</div>
+            <div>nihao</div>
+            <div>nihao</div>
+        </div>
+        <div class="child2">
+            <div>nihao</div>
+            <div>nihao</div>
+            <div>nihao</div>
+            <div>nihao</div>
+            <div>nihao</div>
+            <div>nihao</div>
+        </div>
+    </div>
+</body>
+</html>
