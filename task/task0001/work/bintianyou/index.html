@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title></title>
     <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;overflow: visible;
+        }
+        /*标题栏设计*/
        #header{
            background-color: purple;
            width: 100%;
@@ -62,25 +67,111 @@
             bottom: 0px;
             direction: rtl;
         }
-        #pictur{
-            width: 980px;
-            height: 429px;
-            margin: auto;
-            background-image: url("banner-bg.png");
+        /*大图片部分设计*/
+        #picturWrap{
+            width: 100%;
+
+            background-position: center;
+            background-image: url("banner-bg.jpg");
             background-repeat: no-repeat;
+            background-attachment: local;
+            background-size: cover;
             position: relative;
         }
         #picturetext{
+            width: 350px;
             position: absolute;
             right: 0px;
             bottom: 0px;
             direction: ltr;
             background-color: white;
-            background: -webkit-gradient(linear,center top,center bottom,from(rgba(255, 255, 255, 0.1)),to(rgba(255, 163, 204, 0.5));
+            background: -webkit-gradient(linear,center top,center bottom,from(rgba(255, 255, 255, 0.1)),to(rgba(255, 163, 204, 0.5)));
         }
-        h1{
+        #picture{
+            width: 980px;
+            height: 868px;
+            margin: auto;
+            position: relative;
+        }
+        #title{
+            margin: 10px 10px 6px 10px;
             font-size: 14px;
+            direction: rtl;
         }
+        #content{
+            margin: 6px 10px 30px 10px;
+            font-size: 12px;
+            line-height: 150%;
+            text-indent: 24px;
+        }
+        /*正文图片部分设计*/
+       #container {
+           margin: 0px;
+           width: 100%;
+           height: 100%;
+           background: lightgrey;
+           position: fixed;
+       }
+        #container1{
+            width: 980px;
+            margin: 10px auto;
+            display: -webkit-box;
+        }
+        .rightWrap{
+            width: 100%;
+
+            float: left;
+            background: white;
+            overflow: hidden;
+            position: relative;
+        }
+        .contentWrap{
+            width: 100%;
+
+            float: left;
+            background: white;
+            position:relative;
+            right:320px;
+        }
+        .leftWrap{
+            width: 100%;
+
+            float:left;
+            background: white;
+            position: relative;
+            right: 340px;/*此值等于Content的宽度*/
+        }
+        #left {
+            float: left;
+            width: 320px;
+            padding: ;
+            overflow: hidden;
+            position: relative;
+            left: 660px;
+        }
+        #middle {
+            float: left;
+            width: 340px;
+            background: white;
+            overflow: hidden;
+            position:relative;
+            left: 660px;
+        }
+        #right {
+            float: left;
+            overflow:hidden;
+            background: white;
+            width: 320px;
+            position: relative;
+            left: 660px;
+        }
+        p{
+            margin-top: 15px;
+            font-size: 12px;
+            line-height: 170%;
+            text-indent: 24px;
+        }
+
     </style>
 </head>
 <body>
@@ -103,10 +194,54 @@
         </div>
     </div>
 
-    <div id="pictur">
-        <div id="picturetext">
-            <p>snapn nagja nangfa nkjalkgfaklj aks ka</p>
+    <div id="picturWrap">
+        <div id="picture">
+            <div id="picturetext">
+                <div id="title">
+                    the golden bridge
+                </div>
+                <div id="content">
+                    The Golden Bridge connects Ankleshwar to Bharuch in the Gujarat state of western India.
+                    It was built in 1881 by the British,
+                    who needed a bridge across the Narmada River to create
+                    better access to trade and administration officials in Bombay (now called Mumbai).
+                    The Bridge is also called Narmada Bridge.
+                </div>
+            </div>
         </div>
     </div>
+
+    <div id="container">
+        <div id="container1">
+            <div class="rightWrap">
+                <div class="contentWrap">
+                    <div class="leftWrap">
+                        <div class="aside column leftSidebar" id="left">
+                            <img src="show_fengjingou_229821_4.jpg" width="300px" height="180px">
+                            <p>
+                                这里是正文，12px字体大小，行高170px。整块白色的宽度为320px图片大小为300*180.
+                                文字距离图片下间隔为15px
+                            </p>
+                        </div>
+                        <div class="column section" id="middle" >
+                            <img src="show_fengjingou_229821_4.jpg" width="300px" height="180px">
+                            <p>
+                                这三块。
+                            </p>
+                        </div>
+                        <div class="aside rightSidebat column" id="right">
+                            <img src="show_fengjingou_229821_4.jpg" width="300px" height="180px">
+                            <p>
+                                图片内容和文字内容请自定义。
+                                这里是内容，这里是内容，这里是内容，这里是内容，这里是内容，这里是内容，这里是内容，这里是内容，这里是内容，
+                                这里是内容，这里是内容，这里是内容，这里是内容，这里是内容，这里是内容，。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
